@@ -1,10 +1,11 @@
 <div class="flex flex-col">
   How much is now plus the time you put?
   <input
-    type="date"
+    #timeInput
+    type="text"
     class="border-2 border-blue-500"
   />
-  <div>
+  <button (click)="tempo(timeInput.value)">
     This is {{ finishDate() }}
-  </div>
+  </button>
 </div>
