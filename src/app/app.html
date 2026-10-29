@@ -1,7 +1,9 @@
 <div class="flex flex-col">
-  How much is now plus the time you put?
+  How much since/to this time?
+  When this happened/will happens?
   <input
     #timeInput
+    (input)="onInput(timeInput.value)"
     type="text"
     class="border-2 border-blue-500"
   />
